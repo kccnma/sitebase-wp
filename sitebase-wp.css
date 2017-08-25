@@ -1,0 +1,53 @@
+/* ARTICLES */
+  article {
+  /*max-width: 38em;*/
+  margin: 0 auto 8em auto; }
+  article h1 {
+    text-align: center; }
+  article h1 + h2 {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    font-weight: normal;
+    margin-bottom: 1em; }
+  article .date {
+    text-align: center;
+    font-size: .625em;
+    line-height: .625em;
+    color: #999;
+    font-weight: normal; }
+  article .date + p {
+    margin-top: 2em; }
+  article .author {
+    color: #666;
+    font-size: .875em;
+    line-height: .875em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  article .panel-grid-cell {
+    /*max-width: 38em;*/
+  }
+
+  .featured-image {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .page-title {
+    margin: 2em 0;
+    text-align: center;
+  }
+
+  .post-item {
+    max-width: 50em;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  .post-item + .post-item {
+    margin-top: 2em;
+    border-top: 1px solid #eee;
+    padding-top: 2em;
+  }
