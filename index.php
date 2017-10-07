@@ -74,10 +74,15 @@ get_header(); ?>
 
 <?php else : ?>
 
-	<h1>Page not found</h1>
+    <section class="hero text-centered">
+        <h1>D'oh!</h1>
+        <p>Page not found</p>
+    </section>
     
-    <p>Sorry, the page you are looking for is not available. It may have moved, or you may have followed a bad link. Please 
+    <section>
+        <p>Sorry, the page you are looking for is not available. It may have moved, or you may have followed a bad link. Please 
     <a href="<?php bloginfo('url') ?>">visit our homepage</a> to find what you're looking for.</p>
+    </section>
 
 <?php endif; ?>
 

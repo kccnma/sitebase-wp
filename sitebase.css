@@ -403,7 +403,7 @@ body {
 
 /* Header Only */
 .site-header {
-  background: #ddd; }
+  background: #e3e3e3; }
   .site-header .container {
     padding-top: .5em; }
     @media (min-width: 768px) {
@@ -452,7 +452,7 @@ section {
   margin-bottom: 3em; }
 
 .hero {
-  background: #eee;
+  background: #f0f0f0;
   border-top: none;
   padding: 4em 1em 3em 1em;
   margin-bottom: 1.5em; }
@@ -623,14 +623,15 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         .site-navigation ul li ul {
           text-align: left;
           position: absolute;
+          z-index: 100;
           left: -9000px;
-          background: #ddd;
+          background: #e3e3e3;
           margin-left: .5em; }
         .site-navigation ul li:hover ul {
           left: auto; }
-        .site-navigation ul li.selected a {
+        .site-navigation ul li.selected a, .site-navigation ul li.current-menu-item a {
           font-weight: bold; }
-        .site-navigation ul li.selected li a {
+        .site-navigation ul li.selected li a, .site-navigation ul li.current-menu-item li a {
           font-weight: normal; } }
 
 /* Default Site-Navigation (header only) */
