@@ -6,6 +6,21 @@
  *
  */
 
+/**
+ * Adds custom classes to the array of body classes.
+ *
+ * @param array $classes Classes for the body element.
+ * @return array
+ */
+function my_theme_body_classes( $classes ) {
+	// Adds a class of hfeed to non-singular pages.
+	if ( ! is_singular() ) {
+		$classes[] = 'hfeed';
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'my_theme_body_classes' );
+
 if ( ! function_exists( 'sitebase_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -61,5 +76,7 @@ function sitebase_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'sitebase_scripts' );
+
+
 
 ?>

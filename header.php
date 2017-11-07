@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 <header class="site-header toggle-nav">
     <div class="container">

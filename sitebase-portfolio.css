@@ -1,0 +1,48 @@
+/* HIDE ALL PAGE TITLES */
+h1.page-title {
+    display: none;
+}
+
+
+/* DISPLAY POSTS PLUGIN AS GRID */
+
+.grid li,
+.blog .site-main .post,
+.blog .site-main .post-item,
+.archive .site-main .post-item{
+    list-style: none;
+    display: inline-block;
+    width: 48%;
+    margin: 0 -4px 1% 0;
+    padding: 0 1%;
+}
+.grid .title,
+.blog .site-main .post article,
+.blog .site-main .post .postmeta,
+.blog .site-main .post-item .post-title,
+.blog .site-main .post-item p,
+.archive .site-main .post article,
+.archive .site-main .post .postmeta,
+.archive .site-main .post-item .post-title,
+.archive .site-main .post-item p {
+    display: none;
+}
+
+.grid a {
+    display: block;
+}
+@media (min-width: 768px) {
+    .grid li,
+    .blog .site-main .post,
+    .blog .site-main .post-item,
+    .archive .site-main .post,
+    .archive .site-main .post-item {
+        width: 23%;
+    }
+}
+
+.grid:after {
+    display: table;
+    content: "";
+    clear: both;
+}
